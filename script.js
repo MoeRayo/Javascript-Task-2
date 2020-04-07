@@ -1,3 +1,5 @@
+// an array of objects
+
 let data =[
     {
         principal: 2500,
@@ -16,6 +18,7 @@ let data =[
         time: 3
     }
 ];
+// calculating rate using conditions
  function interestCalculator(arr){
   let rate;
   let interest;
@@ -31,7 +34,6 @@ let data =[
             'time': data.time,
             'interest': interest
           };
-      
       } 
       else if (data.principal >= 2500 && data.time >= 3){
        rate = 4;
@@ -64,10 +66,8 @@ let data =[
             'interest': interest
           };
       }
-      
     })
   console.log(interestData)
-  
   return interestData;
 }
 interestCalculator(data)
